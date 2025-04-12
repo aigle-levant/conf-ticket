@@ -1,0 +1,87 @@
+// variables
+$mobile-size: 375px;
+$desktop-size: 1440px;
+
+// color scheme
+$neutral-0: hsl(0, 0%, 100%);
+$neutral-300: hsl(252, 6%, 83%);
+$neutral-500: hsl(245, 15%, 58%);
+$neutral-700: hsl(245, 19%, 35%);
+$neutral-900: hsl(248, 70%, 10%);
+$orange-500: hsl(7, 88%, 67%);
+$orange-700: hsl(7, 71%, 60%);
+$orange-grad: hsl(7, 86%, 67%);
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+.small {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: $neutral-300;
+} .medium {
+    font-weight: 500;
+    font-size: 1.1rem;
+} .big {
+    font-weight: 700;
+    font-size: 1.5rem;
+} .huge {
+    font-weight: 800;
+    font-size: 2rem;
+} .header-text {
+    font-weight: 700;
+}
+
+// css reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// main
+body {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 20px;
+    background-color: $neutral-900;
+    color: $neutral-0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    * {
+        margin: 0.2rem;
+    }
+    .background-squiggle-top {
+        width: 120px;
+        position: absolute;
+        right: 0;
+    }
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    background-image: url('../images/pattern-lines.svg');
+    p, h1 {
+        margin-top: 1.5rem;
+    }
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    .file-upload-wrapper {
+        background-color: rgba($neutral-500, 0.2);
+        border: 1.5px dashed $neutral-700;
+        padding: 1rem;
+    } .file-icon-wrapper {
+        background-color: rgba($neutral-500, 0.2);
+        border: 1.5px solid $neutral-700;
+    }
+}
