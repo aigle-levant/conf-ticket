@@ -70,12 +70,29 @@ body {
   display: flex;
   flex-direction: column;
 }
+#form .file-icon-wrapper, #form .file-upload-wrapper {
+  border-radius: 10px;
+}
+#form .before-file-upload-text {
+  text-align: left;
+  padding: 1rem 0;
+}
 #form .file-upload-wrapper {
   background-color: rgba(135, 132, 164, 0.2);
   border: 1.5px dashed #4b486a;
-  padding: 1rem;
+  padding: 3rem;
+  margin-bottom: 1rem;
 }
 #form .file-icon-wrapper {
   background-color: rgba(135, 132, 164, 0.2);
   border: 1.5px solid #4b486a;
+  margin: 1.2rem 6.5rem;
+  transition: 0.5s background-color ease;
+  padding: 1rem;
+}
+#form .file-icon-wrapper:hover {
+  background-color: rgba(135, 132, 164, 0.4);
+}
+#form .file-input {
+  display: none;
 }

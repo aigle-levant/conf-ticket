@@ -76,12 +76,26 @@ body {
 #form {
     display: flex;
     flex-direction: column;
-    .file-upload-wrapper {
+    .file-icon-wrapper, .file-upload-wrapper {
+        border-radius: 10px;
+    } .before-file-upload-text {
+        text-align: left;
+        padding: 1rem 0;
+    } .file-upload-wrapper {
         background-color: rgba($neutral-500, 0.2);
         border: 1.5px dashed $neutral-700;
-        padding: 1rem;
+        padding: 3rem;
+        margin-bottom: 1rem;
     } .file-icon-wrapper {
         background-color: rgba($neutral-500, 0.2);
         border: 1.5px solid $neutral-700;
+        margin: 1.2rem 6.5rem;
+        transition: 0.5s background-color ease;
+        padding: 1rem;
+        &:hover {
+            background-color: rgba($neutral-500, 0.4);
+        }
+    } .file-input {
+        display: none;
     }
 }

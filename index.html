@@ -20,8 +20,9 @@
                 <h1 class="huge">Your Journey to Coding Conf 2025 Starts Here!</h1>
                 <p class="small">Secure your spot at next year's biggest coding conference.</p>
             </div>
+
             <form id="form">
-                <label for="img-upload" class="medium">Upload Avatar</label>
+                <label for="img-upload" class="medium before-file-upload-text">Upload Avatar</label>
                 <div class="file-upload-wrapper">
                     <label class="label">
                         <input class="file-input" type="file" name="file" title="file">
@@ -35,7 +36,13 @@
                     <i class="fa-solid fa-circle-info fa-2xs"></i>
                     <span class="small">Upload your photo (JPG or PNG, max size: 500KB).</span>
                 </div>
+                
+                <div class="personal-info-wrapper">
+                    <label for="name" class="medium">Full name:</label>
+                    <input class="input input-name medium" type="text" name="name" required placeholder="Optimus Prime">
+                </div>
             </form>
+
         </main>
     </div>
     <script src="assets/script.js" defer></script>
