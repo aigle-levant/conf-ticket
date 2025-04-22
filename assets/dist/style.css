@@ -33,8 +33,8 @@
 body {
   font-family: "Inconsolata", sans-serif;
   font-size: 20px;
-  background-color: #0c082b;
   color: white;
+  background-image: url("../images/background-mobile.png");
 }
 
 .header {
@@ -70,6 +70,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+#form .hidden {
+  display: none;
+}
 #form .file-icon-wrapper, #form .file-upload-wrapper {
   border-radius: 10px;
 }
@@ -95,4 +98,40 @@ body {
 }
 #form .file-input {
   display: none;
+}
+#form .personal-info-wrapper {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#form .personal-info-wrapper * {
+  z-index: 2;
+  margin: 0.6rem 0;
+}
+#form .personal-info-wrapper .input, #form .personal-info-wrapper .btn {
+  border-radius: 10px;
+  padding: 1rem;
+}
+#form .personal-info-wrapper .input {
+  border: 1px solid #8784a4;
+  background-color: rgba(12, 8, 43, 0.2);
+  color: #d2d1d6;
+}
+#form .personal-info-wrapper .btn {
+  background-color: #e16151;
+  color: #0c082b;
+  border: 1px solid #e16151;
+  transition: 0.5s all ease;
+}
+#form .personal-info-wrapper .btn:hover {
+  background-color: #0c082b;
+  color: #e16151;
+}
+#form .background-squiggle-bottom {
+  z-index: 0;
+  width: 70%;
+  position: relative;
+  left: -1rem;
+  bottom: 15vh;
 }

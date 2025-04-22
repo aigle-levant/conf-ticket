@@ -35,12 +35,24 @@
                 <div class="after-upload">
                     <i class="fa-solid fa-circle-info fa-2xs"></i>
                     <span class="small">Upload your photo (JPG or PNG, max size: 500KB).</span>
+                    <span class="small hidden">File too large. Please upload a photo under 500KB.</span>
                 </div>
                 
                 <div class="personal-info-wrapper">
-                    <label for="name" class="medium">Full name:</label>
+                    <label for="name" class="medium">Full Name:</label>
                     <input class="input input-name medium" type="text" name="name" required placeholder="Optimus Prime">
+                    <label for="name" class="medium">Email Address:</label>
+                    <input class="input input-name medium" type="text" name="name" required placeholder="optimus@gmail.com">
+                    <div class="after-upload hidden">
+                        <i class="fa-solid fa-circle-info fa-2xs"></i>
+                        <span class="small">Please enter a valid email address.</span>
+                    </div>
+                    <label for="name" class="medium">GitHub Username:</label>
+                    <input class="input input-name medium" type="text" name="name" required placeholder="@optimus-prime">
+                    <button class="btn submit-btn medium" type="submit" title="submit">Generate My Ticket</button>
+                    
                 </div>
+                <img src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="." class="background-squiggle-bottom">
             </form>
 
         </main>
